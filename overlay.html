@@ -1,0 +1,84 @@
+<!-- Created by Linu Cherian - Overlay Snippet -->
+<style>
+  .hideOverlay{
+    display: none;
+  }
+  .showOverlay{
+    display: block;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  #overlay__wrapper{
+    background-color: rgba(1 , 1, 1, .7);
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%
+  }
+  .overlay__content{
+    margin-top: 365px;
+    margin-left: 400px;
+    width: 745px;
+    border: 6px solid #696969;
+    background-color: #FFF;
+    padding: 20px;
+  }
+  .overlay__close{
+    position: absolute;
+    margin: -45px 10px 10px 742px;
+    width: 15px;
+    height: 15px;
+    opacity:0.8;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .overlay__close::before {
+    content: "x";
+    border: none;
+    padding: 0 8px;
+    font-size: 20px;
+  }
+  .overlay__close:hover {
+     opacity:0.8;
+  }
+  .overlay__header{
+    font-size: 18px;
+  }
+  .overlay__desc{
+    padding: 10px;
+    font-size: 15px;
+  }
+  .overlay__cta{
+    display: inline-block;
+  }
+  .overlay__cta a{
+    padding: 3px 15px;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+  .overlay__cta a:hover{
+    text-decoration: none;
+    color: #000;
+  }
+  .overlay__cta--cancel{
+    background-color: #D3D3D3;
+    color: #000;
+  }
+  .overlay__cta--yes{
+    background-color: #3CB371;
+    color: #FFF;
+  }
+</style>
+
+<div id="overlay__wrapper" class="showOverlay">
+  <div class="overlay__content">
+    <div class="overlay__header bold">Confirm</div>
+    <div class="overlay__close"></div>
+    <div class="overlay__desc">Are you sure you want to Continue?</div>
+    <div class="overlay__cta">
+      <a href="https://abc-index.html" class="overlay__cta--cancel bold" alt="cancel">Cancel</a>
+      <a href="https://abc-page.html" class="overlay__cta--yes bold" alt="yes">Yes</a>
+    </div>
+  </div>
+</div>
