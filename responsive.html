@@ -1,0 +1,108 @@
+<!-- Created by Linu Cherian - Responsive Sample -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Sample</title>
+	<style>
+		.center-copy{
+			text-align: center;
+		}
+		.banner{
+			font-size: 30px;
+			padding: 10px;
+			background-color: #DCDCDC;
+		}
+		.header-section{
+			margin-top: -137px;
+		}
+		.row{
+			position: relative;
+			float: left;
+			margin-top: 150px;
+			padding: 5px;
+			z-index: 15;
+		}
+		.hero{
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover !important;
+			z-index: 0;
+		}
+		.bg-image{
+			width: 100%;
+			z-index: 0;
+		}
+		.b-lists{
+			padding-left: 10px;
+		}
+		.bullet{
+    		display: list-item;
+    		list-style-type: disc;
+    		list-style-position: outside;
+		}
+		.middle-section{
+			width: 100%;
+			background-color: #DCDCDC;
+		}
+		.footer-section{
+			width: 100%;
+			background-color: #DEDEDE;
+		}
+	@media only screen and (max-width: 767px){
+		.row{
+			margin-left: 0;
+		}
+		.bg-image{
+			padding-top: 30px
+		}
+
+	}
+	@media only screen and (min-width: 768px){
+		.row{
+			margin-left: 165px;
+		}
+		.bg-image{
+			margin-top: -153px;
+			padding-top: 0;
+		}
+	}
+	</style>
+</head>
+<body>
+  <main id="homepage">
+	<div class="banner center-copy">It's the banner here!</div>
+	<div class="header-section">
+		<div class="row">
+			<h1 class="headline">Headline is here!</h1>
+			<div class="b-lists">
+				<div class="bullet">Some copy here</div>
+				<div class="bullet">Some more copy here</div>
+				<div class="bullet">Another set of copy here</div>
+				<div class="bullet">Yet another set of copy here</div>
+			</div>
+		</div>
+		<div class="hero">
+			<picture>
+	            <!--[if IE 9]><video style="display: none;"><![endif]-->
+	            <source srcset="BG@2x.png, BG@2x.png 2x" media="(max-width: 767px)">
+	            <source srcset="BG@2x.png, BG@2x.png 2x" media="(min-width: 768px)">
+	            <!--[if IE 9]></video><![endif]-->
+	            <img class="bg-image" src="BG@2x.png" alt="Homepage">
+	        </picture>
+		</div>
+	</div>
+	<div class="middle-section center-copy">
+		<h2>Middle Section</h2>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="footer-section center-copy">
+		<h4>Footer Section</h4>
+		<div></div>
+		<div></div>
+	</div>
+  </main>
+</body>
+</html>
